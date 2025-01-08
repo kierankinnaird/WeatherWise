@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>WeatherWise</h1>
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+    <main>
+        <p id="placeholder">Enter a city name to check the weather information.</p>
+        <div id="weatherContainer" class="weather-grid">
+            <div class="weather-box" id="temperatureBox">Current Temperature</div>
+            <div class="weather-box" id="sunriseSunsetBox">Sunrise / Sunset Time</div>
+            <div class="weather-box" id="weatherTypeBox">
+                Weather Type
+                <img id="weatherIcon" alt="Weather Icon" style="display: none;" />
+            </div>
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
